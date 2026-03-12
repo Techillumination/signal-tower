@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signal Tower – Phase 0</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══ TOP BAR ═══ -->
+  <header class="topbar">
+    <span class="topbar-left" id="systemStatus">System Activate.</span>
+    <span class="topbar-right" id="utcClock">0:00:00 UTC</span>
+  </header>
+
+  <!-- ═══ PHASE ROW ═══ -->
+  <div class="phase-row">
+    <div class="phase-left">
+      <span class="phase-dot"></span>
+      <span class="phase-text">SIGNAL TOWER - PHASE 0</span>
+    </div>
+    <span class="phase-clock" id="utcClockMobile">0:00:00 UTC</span>
+  </div>
+
+  <!-- ═══ MAIN CONTENT ═══ -->
+  <main class="content">
+
+    <h1 class="headline">Only Signal. No noise.</h1>
+
+    <div class="subtext">
+      <p>Tech Illumination is not trying to be loud.</p>
+    </div>
+    <div class="subtext2">
+      <p>Some things don't need to explain themselves yet.</p>
+    </div>
+
+    <blockquote class="quote-block">
+      <p class="quote-bold">Serious systems do not announce themselves.</p>
+      <p class="quote-mono">If this feels incomplete, that's intentional.</p>
+    </blockquote>
+
+    <div class="form-wrap">
+      <div class="form-row">
+        <input
+          class="form-input"
+          type="email"
+          id="emailInput"
+          placeholder="Enter email address to receive signal"
+          autocomplete="off"
+        />
+        <button class="form-btn form-btn-desktop" id="signalBtn" onclick="handleSignal()">
+          Receive Signal &nbsp;→
+        </button>
+        <button class="form-btn form-btn-mobile" id="signalBtnMobile" onclick="handleSignal()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+      </div>
+      <div class="form-line"></div>
+      <div class="form-hint" id="formHint">-- Get notified when Tech Illumination launches. --</div>
+    </div>
+
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
